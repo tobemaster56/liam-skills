@@ -1,7 +1,7 @@
 ---
 name: switch-appleid
 version: 1.0.0
-description: "在 macOS App Store 一键切换不同区域的 Apple ID（国区 / 美区 / 土区 / 日区等）。当用户说「切换 Apple ID」「切到美区」「换成国区账号」「App Store 换区」「switch apple id」「在 Mac 上换苹果账号」时触发。涵盖把多区凭据存入钥匙串、用 AppleScript 驱动 App Store 退出并重新登录。"
+description: "在 macOS App Store 一键切换不同区域的 Apple ID（当前内置支持国区 / 美区 / 土区，新增区域只需加一行映射）。当用户说「切换 Apple ID」「切到美区」「换成国区账号」「App Store 换区」「switch apple id」「在 Mac 上换苹果账号」时触发。涵盖把多区凭据存入钥匙串、用 AppleScript 驱动 App Store 退出并重新登录。"
 ---
 
 # Switch Apple ID Region (macOS App Store)
@@ -17,7 +17,7 @@ description: "在 macOS App Store 一键切换不同区域的 Apple ID（国区 
 
 ## Step 1：把账号存入钥匙串
 
-约定 service 名为 `AppleId_<REGION>`（如 `AppleId_CN`、`AppleId_US`、`AppleId_TU`、`AppleId_JP`），AppleScript 按 zone 参数映射到对应 service。
+约定 service 名为 `AppleId_<REGION>`。脚本内置三个映射：`AppleId_CN`、`AppleId_US`、`AppleId_TU`（即 `cn` / `us` / `tu` 参数）。新增区域时先在脚本里加 `else if` 分支，再在钥匙串里加同名条目。
 
 为每个区域执行一次（`-U` 表示若已存在则更新）：
 

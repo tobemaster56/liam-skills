@@ -66,7 +66,7 @@ ln -s ~/.local/share/liam-skills/.agents/skills/switch-appleid ~/.agents/skills/
 
 | Skill | 描述 | 触发词示例 |
 |-------|------|-----------|
-| [`switch-appleid`](./.agents/skills/switch-appleid/SKILL.md) | macOS App Store 一键切换不同区域 Apple ID（CN/US/TR/JP 等）。凭据存钥匙串，AppleScript 驱动 App Store UI | "切换 Apple ID 区域"、"switch apple id"、"切到美区/国区/土区" |
+| [`switch-appleid`](./.agents/skills/switch-appleid/SKILL.md) | macOS App Store 一键切换不同区域 Apple ID（当前支持 CN / US / TU，可自行扩展）。凭据存钥匙串，AppleScript 驱动 App Store UI | "切换 Apple ID 区域"、"switch apple id"、"切到美区/国区/土区" |
 
 ## 添加新 Skill
 
