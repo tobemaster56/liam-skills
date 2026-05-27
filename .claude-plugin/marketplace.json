@@ -1,0 +1,22 @@
+{
+  "name": "liam-skills",
+  "owner": {
+    "name": "Liam",
+    "email": "yiran56@gmail.com"
+  },
+  "metadata": {
+    "description": "Liam 分享的 Agent Skills 合集",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "liam-skills",
+      "description": "Liam 的开源 Skills，用于在 Claude Code / Codex 等 Agent 中复用日常工作流",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/switch-appleid"
+      ]
+    }
+  ]
+}
