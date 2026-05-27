@@ -10,8 +10,8 @@
   },
   "plugins": [
     {
-      "name": "liam-skills",
-      "description": "Liam 的开源 Skills，用于在 Claude Code / Codex 等 Agent 中复用日常工作流",
+      "name": "switch-appleid",
+      "description": "macOS App Store 一键切换不同区域 Apple ID（CN/US/TR/JP 等）。凭据存钥匙串，AppleScript 驱动 App Store UI。",
       "source": "./",
       "strict": false,
       "skills": [

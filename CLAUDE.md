@@ -38,7 +38,7 @@ liam-skills/
    ---
    ```
 
-4. **同步注册**：新增、重命名、删除任一 skill 后，必须同步修改 `.claude-plugin/marketplace.json` 的 `plugins[0].skills` 数组（路径形如 `./.agents/skills/<name>`）与 `README.md` 的可用 Skills 表格 —— 三处保持一致。
+4. **同步注册**：每个 skill 在 marketplace 里是**独立的 plugin**（便于用户挑着装）。新增、重命名、删除任一 skill 后，必须同步修改 `.claude-plugin/marketplace.json` 的 `plugins[]` 数组（新增一项，`name = <skill 名>`，`skills: ["./.agents/skills/<name>"]`）与 `README.md` 的可用 Skills 表格。
 
 5. **版本号**：在 `SKILL.md` 改动较大时递增 `version`；市场版本号 `marketplace.json` 顶部的 `metadata.version` 在每次发布时递增。
 
