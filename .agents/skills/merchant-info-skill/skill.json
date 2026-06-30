@@ -1,0 +1,21 @@
+{
+  "name": "merchant-info-skill",
+  "display_name": "示例商家信息查询",
+  "description": "查询示例商家信息：基本信息、营业时间、门店地址、店内Wi-Fi、店长推荐菜、最新动态、菜品配方。",
+  "version": "0.1.0",
+  "author": "你的名字",
+  "license": "MIT",
+  "category": "信息查询",
+  "keywords": ["示例商家", "营业时间", "推荐菜", "wifi", "配方", "动态"],
+  "mcp_server": {
+    "transport": "streamable-http",
+    "url": "https://merchant-prod-d7g6mi7r6ad0ffdff.service.tcloudbase.com/"
+  },
+  "tools": [
+    { "name": "get_merchant_info", "description": "商家基本信息（名称/简介/营业时间/门店）", "inputSchema": { "type": "object", "properties": {}, "required": [] } },
+    { "name": "get_wifi_info", "description": "店内 Wi-Fi 名称和密码", "inputSchema": { "type": "object", "properties": {}, "required": [] } },
+    { "name": "get_recommended_dishes", "description": "店长推荐菜单", "inputSchema": { "type": "object", "properties": {}, "required": [] } },
+    { "name": "get_latest_news", "description": "商家最新动态", "inputSchema": { "type": "object", "properties": {}, "required": [] } },
+    { "name": "get_recipes", "description": "菜品配方，可选 recipe_id", "inputSchema": { "type": "object", "properties": { "recipe_id": { "type": "string" } }, "required": [] } }
+  ]
+}

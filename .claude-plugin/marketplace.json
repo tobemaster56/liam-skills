@@ -17,6 +17,15 @@
       "skills": [
         "./.agents/skills/switch-appleid"
       ]
+    },
+    {
+      "name": "merchant-info-skill",
+      "description": "示例商家信息查询模板：餐厅基本信息、营业时间、门店地址、Wi-Fi、店长推荐菜、最新动态、菜品配方，数据通过 MCP 实时获取（后端为 CloudBase 自建 MCP server）。",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./.agents/skills/merchant-info-skill"
+      ]
     }
   ]
 }

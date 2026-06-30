@@ -67,6 +67,7 @@ ln -s ~/.local/share/liam-skills/.agents/skills/switch-appleid ~/.agents/skills/
 | Skill | 描述 | 触发词示例 |
 |-------|------|-----------|
 | [`switch-appleid`](./.agents/skills/switch-appleid/SKILL.md) | macOS App Store 一键切换不同区域 Apple ID（当前支持 CN / US / TU，可自行扩展）。凭据存钥匙串，AppleScript 驱动 App Store UI | "切换 Apple ID 区域"、"switch apple id"、"切到美区/国区/土区" |
+| [`merchant-info-skill`](./.agents/skills/merchant-info-skill/SKILL.md) | 示例商家信息查询模板（餐厅信息/营业时间/门店/Wi-Fi/推荐菜/动态/配方），数据经 MCP 实时获取，后端为 CloudBase 自建 MCP server | "几点开门"、"招牌菜"、"Wi-Fi 密码"、"最近有什么活动" |
 
 ## 添加新 Skill
 
